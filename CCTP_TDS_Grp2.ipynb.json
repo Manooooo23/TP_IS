@@ -1,0 +1,246 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "1-8WHL1H2wTq"
+   },
+   "source": [
+    "<h1><center>Examen TP - Info3 Image et signal. </center></h1>\n",
+    "    <center><h2> <font color='red'>Durée: 30min. Tiers-temps: 40 min</font> <center></h2>\n",
+    "\n",
+    "<h2><center>Consignes</center></h2>\n",
+    " \n",
+    "1. Le fichier .ipynb doit être enregistré sous la forme: *votre_Nom_Prenom.ipynb* et être déposé sous Moodle dans la limite de **5'** après la fin de l'examen.\n",
+    "2. Seuls documents numériques autorisés : votre travail des TPs et l'aide de Matlab ou Python. **Interdit**: des moyennes de communication (smartphone, ...).\n",
+    "4. Votre réponse de chaque question doit avoir un code soure et des résultats numériques ou des images et des commentaires associés.\n",
+    "4. Ce test TP comportera un total de 21 points, avec l'attribution de 2 points bonus pour les questions 4 et 5.\n",
+    "***"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "_FcJJjyS2wTr"
+   },
+   "source": [
+    "<h3><center>Echantillonnage et transformée de Fourier</center></h3>\n",
+    "\n",
+    "Soit un signal $s1$ de longueur $3 ms$, échantillonné à $fe = 2000 kHz$. Ce signal est :\n",
+    "\n",
+    "- pendant la première milliseconde, un signal cosinusoïdal de fréquence $300 kHz$ ;\n",
+    "- pendant la deuxième milliseconde, un signal cosinusoïdal de fréquence $500 kHz$ ;\n",
+    "- pendant la troisième milliseconde, un signal cosinusoïdal de fréquence $700 kHz$."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "PVXROnB_2wTr"
+   },
+   "source": [
+    "***"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "8rktyr352wTs"
+   },
+   "source": [
+    "**1)- 3pts** Générer le signal $s1$ et afficher le en fonction du temps, en faisant clairement apparaître l’axe du temps.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "6BeDYEVt2wTs"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "sS62Cp_82wTs"
+   },
+   "source": [
+    "**2)** Calculer la transformée de Fourier du signal $s1$ et afficher son module, en faisant clairement apparaître l’axe des fréquences :\n",
+    "\n",
+    "> **a)- 3pts** un plot pour les fréquences en $Hz$ ;\n",
+    "\n",
+    "> **b)- 3pts** un plot pour les fréquences normalisées."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "nTwU5jaU2wTs"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "s3YLxIPGGFiH"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "4sn3BS-Y2wTt"
+   },
+   "source": [
+    "**3)- 3pts** Commenter l’allure du spectre obtenu en 2). Est-ce que ce signal a été correctement échantillonné ? Justifier votre réponse."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "vPS1AHyJGYCO"
+   },
+   "source": [
+    "*Commentaires*: "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "EUWpoeVD2wTt"
+   },
+   "source": [
+    "**4) - BONUS 1pts** Proposer et mettre en œuvre un filtre pour garder les fréquences entre $250 kHz$ et $350 kHz$ (et les\n",
+    "fréquences négatives correspondantes) et éliminer toutes les autres fréquences."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "lMN_ceir2wTt"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "_3gPCLpH2wTu"
+   },
+   "source": [
+    "**5) - BONUS - 3pts** Afficher alors le signal filtré obtenu, en faisant clairement apparaître l’axe du temps. Commenter le résultat."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "9Mxr0U262wTu"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "o6p9Pok02wTu"
+   },
+   "source": [
+    "*Commentaires*: "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "AwX1ZBLK2wTu"
+   },
+   "source": [
+    "**6)- 3pts** Re-générer le signal $s1$, mais avec une fréquence d'échantillonnage de $1000 kHz$."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "8IV6TY422wTu"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "We2C9Ays2wTu"
+   },
+   "source": [
+    "**7)- 3pts** Calculer la transformée de Fourier de ce signal et afficher son module, en faisant clairement apparaître l’axe des fréquences en $Hz$."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "3kxrVTJP2wTu"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "WRzTZRSW2wTv"
+   },
+   "source": [
+    "**8)- 3pts** Est-ce que ce signal a été correctement échantillonné ? Justifier votre réponse."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "oT70NcWo2wTv"
+   },
+   "source": [
+    "*Commentaires*: "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "vYpZd9212wTv"
+   },
+   "source": [
+    "***"
+   ]
+  }
+ ],
+ "metadata": {
+  "colab": {
+   "provenance": []
+  },
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 1
+}
